@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span{
+  color: orangered;
+}
+body {
+    font-size: 15pt;
+}
+
+.wrapper{
+  background: #000;
+  color: #fff;
+}
+.main-head{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.main-head ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.main-head ul li{
+  padding-left: 30px;
+  position: relative
+}
+.main-head ul li:hover{
+  color: orangered;
+  display: block;
+}
+
+.dropdown{
+  display: none;
+  
+}
+
+.main-head ul li:hover .dropdown{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  color: #fff;
+}
+.dropdown ul{
+  display: block;
+  margin: 10px;
+  background: #000;
+}
+.dropdown ul li{
+  width: 125px;
+  padding: 10px;
+  position: relative;
+}
+
+
+.dropdown1{
+  display: none;
+}
+.dropdown ul li:hover .dropdown1{
+  display: block;
+  margin: 10px;
+  top: 0;
+  left: 110px;
+  position: absolute;
+  color: #fff;
+}
+.dropdown1 ul{
+  display: block;
+  background: #000;
+  margin: 10px;
+}
+
+.dropdown1 ul li{
+  padding: 10px;
+  
+}
+
+.hero{
+  background-image: url("/images/fern-g93bb3406a_1920.jpg");
+  background-size: cover;
+  height: 50vh;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero p{
+  font-size: 40px;
+  color: #fff;
+}
+
+.arrow{
+  width: 20px;
+}
